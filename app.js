@@ -7,6 +7,7 @@ const indexRouter = require('./routes/index');
 const tradesRouter = require('./routes/trades');
 
 const app = express();
+app.use(express.json());
 
 // view engine setup
 app.set('view engine', 'jade');
